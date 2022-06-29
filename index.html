@@ -1,25 +1,640 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="font/css/all.min.css">
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
-</head>
-<body>
-  <main>
-  </main>
-  <!-----------Script Js------------>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="font/js/all.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+<DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Home | Ziq</title>
+
+      <!--External css File-->
+      <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+      <!--Bootstrap-->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+      />
+      <!--Google font-->
+    </head>
+    <body>
+      <main>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12" >
+                    <div class="container-fluid">
+                      <div class="row justify-content-end">
+                        <div class="col-lg-9" style="padding-left: 0px;">
+                          <button
+                            class="btn shadow-none"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling"
+                            aria-controls="offcanvasScrolling"
+                          >
+                            <img
+                              src="./assets/images/menu.png"
+                              alt="menu icon"
+                            />
+                          </button>
+                          <img
+                            src="./assets/images/logo-ziq.png"
+                            alt="logo ziq"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="product-header col-lg-12 d-flex flex-column align-items-center"
+                        >
+                          <h1>Black M’s Shop</h1>
+                          <span>10 Produits</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div
+                            id="carouselExampleControls"
+                            class="carousel slide"
+                            data-bs-interval="500000"
+                            data-bs-ride="carousel"
+                          >
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="container-fluid">
+                                  <div class="row mt-5 justify-content-center">
+                                    <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <img
+                                            class="img-product"
+                                            src="./assets/images/casquette.png"
+                                            alt="product image"
+                                            width="100%"
+                                            height="auto"
+                                          />
+                                        </div>
+                                        <div
+                                          class="card-footer bg-white border-0"
+                                        >
+                                          <div class="container-fluid">
+                                            <div class="row">
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span class="price">14 EURO</span>
+                                                <img
+                                                  src="./assets/images/like.png"
+                                                  alt="like icon"
+                                                  width="10px"
+                                                  height="9.18px"
+                                                />
+                                              </div>
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span>4.5</span>
+                                                <button class="btn btn-buy-now">
+                                                  Buy now
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <img
+                                            class="img-product"
+                                            src="./assets/images/t-shirt.png"
+                                            alt="product image"
+                                            width="100%"
+                                            height="auto"
+                                          />
+                                        </div>
+                                        <div
+                                          class="card-footer bg-white border-0"
+                                        >
+                                          <div class="container-fluid">
+                                            <div class="row">
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span class="price">14 EURO</span>
+                                                <img
+                                                  src="./assets/images/like.png"
+                                                  alt="like icon"
+                                                  width="10px"
+                                                  height="9.18px"
+                                                />
+                                              </div>
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span>4.5</span>
+                                                <button class="btn btn-buy-now">
+                                                  Buy now
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row mt-5 justify-content-center">
+                                    <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <img
+                                            class="img-product"
+                                            src="./assets/images/casquette01.png"
+                                            alt="product image"
+                                            width="100%"
+                                            height="auto"
+                                          />
+                                        </div>
+                                        <div
+                                          class="card-footer bg-white border-0"
+                                        >
+                                          <div class="container-fluid">
+                                            <div class="row">
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span class="price">14 EURO</span>
+                                                <img
+                                                  src="./assets/images/like.png"
+                                                  alt="like icon"
+                                                  width="10px"
+                                                  height="9.18px"
+                                                />
+                                              </div>
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span>4.5</span>
+                                                <button class="btn btn-buy-now">
+                                                  Buy now
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <img
+                                            class="img-product"
+                                            src="./assets/images/casquette02.png"
+                                            alt="product image"
+                                            width="100%"
+                                            height="auto"
+                                          />
+                                        </div>
+                                        <div
+                                          class="card-footer bg-white border-0"
+                                        >
+                                          <div class="container-fluid">
+                                            <div class="row">
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span class="price">14 EURO</span>
+                                                <img
+                                                  src="./assets/images/like.png"
+                                                  alt="like icon"
+                                                  width="10px"
+                                                  height="9.18px"
+                                                />
+                                              </div>
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span>4.5</span>
+                                                <button class="btn btn-buy-now">
+                                                  Buy now
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row mt-5 justify-content-center">
+                                    <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <img
+                                            class="img-product"
+                                            src="./assets/images/casquette.png"
+                                            alt="product image"
+                                            width="100%"
+                                            height="auto"
+                                          />
+                                        </div>
+                                        <div
+                                          class="card-footer bg-white border-0"
+                                        >
+                                          <div class="container-fluid">
+                                            <div class="row">
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span class="price">14 EURO</span>
+                                                <img
+                                                  src="./assets/images/like.png"
+                                                  alt="like icon"
+                                                  width="10px"
+                                                  height="9.18px"
+                                                />
+                                              </div>
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span>4.5</span>
+                                                <button class="btn btn-buy-now">
+                                                  Buy now
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <img
+                                            class="img-product"
+                                            src="./assets/images/t-shirt.png"
+                                            alt="product image"
+                                            width="100%"
+                                            height="auto"
+                                          />
+                                        </div>
+                                        <div
+                                          class="card-footer bg-white border-0"
+                                        >
+                                          <div class="container-fluid">
+                                            <div class="row">
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span class="price">14 EURO</span>
+                                                <img
+                                                  src="./assets/images/like.png"
+                                                  alt="like icon"
+                                                  width="10px"
+                                                  height="9.18px"
+                                                />
+                                              </div>
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span>4.5</span>
+                                                <button class="btn btn-buy-now">
+                                                  Buy now
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row mt-5 justify-content-center">
+                                    <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <img
+                                            class="img-product"
+                                            src="./assets/images/casquette01.png"
+                                            alt="product image"
+                                            width="100%"
+                                            height="auto"
+                                          />
+                                        </div>
+                                        <div
+                                          class="card-footer bg-white border-0"
+                                        >
+                                          <div class="container-fluid">
+                                            <div class="row">
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span class="price">14 EURO</span>
+                                                <img
+                                                  src="./assets/images/like.png"
+                                                  alt="like icon"
+                                                  width="10px"
+                                                  height="9.18px"
+                                                />
+                                              </div>
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span>4.5</span>
+                                                <button class="btn btn-buy-now">
+                                                  Buy now
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <img
+                                            class="img-product"
+                                            src="./assets/images/casquette02.png"
+                                            alt="product image"
+                                            width="100%"
+                                            height="auto"
+                                          />
+                                        </div>
+                                        <div
+                                          class="card-footer bg-white border-0"
+                                        >
+                                          <div class="container-fluid">
+                                            <div class="row">
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span class="price">14 EURO</span>
+                                                <img
+                                                  src="./assets/images/like.png"
+                                                  alt="like icon"
+                                                  width="10px"
+                                                  height="9.18px"
+                                                />
+                                              </div>
+                                              <div
+                                                class="col-lg-12 d-flex justify-content-between"
+                                              >
+                                                <span>4.5</span>
+                                                <button class="btn btn-buy-now">
+                                                  Buy now
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="..."
+                                  class="d-block w-100"
+                                  alt="..."
+                                />
+                              </div>
+                            </div>
+                            <button
+                              class="carousel-control-prev"
+                              type="button"
+                              data-bs-target="#carouselExampleControls"
+                              data-bs-slide="prev"
+                            >
+                              <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                              ></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                              class="carousel-control-next"
+                              type="button"
+                              data-bs-target="#carouselExampleControls"
+                              data-bs-slide="next"
+                            >
+                              <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                              ></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-4 justify-content-center">
+                        <div class="col-lg-10">
+                          <ul class="d-flex justify-content-between">
+                            <li>
+                              <a href="#">
+                                <img
+                                  src="./assets/images/Facebook.png"
+                                  alt="facebook icon"
+                                  width="25px"
+                                  height="25px"
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img
+                                  src="./assets/images/Instagram.png"
+                                  alt="facebook icon"
+                                  width="25px"
+                                  height="25px"
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img
+                                  src="./assets/images/Twitter.png"
+                                  alt="facebook icon"
+                                  width="25px"
+                                  height="25px"
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img
+                                  src="./assets/images/Snapchat.png"
+                                  alt="facebook icon"
+                                  width="25px"
+                                  height="25px"
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img
+                                  src="./assets/images/share-it.png"
+                                  alt="facebook icon"
+                                  width="25px"
+                                  height="25px"
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="offcanvas offcanvas-start offset-2"
+                data-bs-scroll="true"
+                data-bs-backdrop="false"
+                tabindex="-1"
+                id="offcanvasScrolling"
+                aria-labelledby="offcanvasScrollingLabel"
+              >
+                <div class="offcanvas-header">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div
+                        class="col-lg-12 d-flex justify-content-between align-items-center"
+                      >
+                        <img
+                          src="./assets/images/logo-ziq.png"
+                          alt="logo ziq"
+                        />
+                        <button
+                          type="button"
+                          class="btn-close shadow-none"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12" style="padding-left: 0px">
+                        <nav class="side-nav">
+                          <ul class="side-nav-box">
+                            <li
+                              class="side-nave-item d-flex align-items-center"
+                            >
+                              <a href="#">
+                                <img
+                                  src="./assets/images/home.png"
+                                  alt="home icon"
+                                  width="15px"
+                                  height="15px"
+                                />
+                                Home
+                              </a>
+                            </li>
+                            <li class="side-nave-item">
+                              <a href="#">
+                                <img
+                                  src="./assets/images/shop.png"
+                                  alt="home icon"
+                                  width="15px"
+                                  height="15px"
+                                />
+                                Shop
+                              </a>
+                            </li>
+                            <li class="side-nave-item">
+                              <a href="#">
+                                <img
+                                  src="./assets/images/link.png"
+                                  alt="home icon"
+                                  width="15px"
+                                  height="15px"
+                                />
+                                Clip & streaming’s links
+                              </a>
+                            </li>
+                            <li class="side-nave-item">
+                              <a href="#">
+                                <img
+                                  src="./assets/images/profile.png"
+                                  alt="home icon"
+                                  width="15px"
+                                  height="15px"
+                                />
+                                Presentation & Contact
+                              </a>
+                            </li>
+                            <li class="side-nave-item">
+                              <a href="#">
+                                <img
+                                  src="./assets/images/web-link.png"
+                                  alt="home icon"
+                                  width="15px"
+                                  height="15px"
+                                />
+                                Site de Black M
+                              </a>
+                            </li>
+                            <li class="side-nave-item">
+                              <a href="#">
+                                <img
+                                  src="./assets/images/reservation-concept.png"
+                                  alt="home icon"
+                                  width="15px"
+                                  height="15px"
+                                />
+                                Reservations concert
+                              </a>
+                            </li>
+                            <li class="side-nave-item">
+                              <a href="#">
+                                <img
+                                  src="./assets/images/walter-white.png"
+                                  alt="home icon"
+                                  width="15px"
+                                  height="15px"
+                                />
+                                NFT by Black M
+                              </a>
+                            </li>
+                            <li class="side-nave-item">
+                              <a href="#">
+                                <img
+                                  src="./assets/images/net-work.png"
+                                  alt="home icon"
+                                  width="15px"
+                                  height="15px"
+                                />
+                                Black M’s QlubDeal
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!--Script-->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+</DOCTYPE>

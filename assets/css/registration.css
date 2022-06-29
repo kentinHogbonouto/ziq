@@ -1,0 +1,371 @@
+/*------------General style---------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --primary: #0064e1;
+  --primary-light: #6291ff;
+  --primary-dark: #003bae;
+  --secondary: #fd0301;
+  --dark: #000000;
+  --light: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Inter, Arial, sans-serif;
+}
+#inscription-page,
+#connexion-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.inscription {
+  width: 100%;
+  min-height: 400px;
+  border-radius: 5px;
+  display: flex;
+  min-height: 100vh;
+}
+
+.inscriptionform {
+  flex-basis: 50%;
+  padding: 25px;
+}
+.inscriptionform_header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#inscription-page .fa-solid,
+#connexion-page .fa-solid {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #d3d3d3;
+  font-size: 15px;
+  padding: 15px;
+}
+
+.input_group_row {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  margin: auto;
+}
+.input_group_row .input_group {
+  width: 45% !important;
+}
+.input_group {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.input_group input {
+  border: 0;
+  border-bottom: 2px solid #808080;
+  font-size: 18px;
+  padding: 25px 0 0 0;
+  outline: none;
+  transition: all 0.2s ease-in;
+  background: transparent;
+  width: 100%;
+}
+.input_group input:focus {
+  border-bottom-color: var(--primary);
+}
+.input_group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #808080;
+}
+
+.input_group input:focus + label {
+  color: var(--primary);
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+#inscription-page .input_checkbox {
+  margin-bottom: 15px !important;
+  width: 80%;
+  margin: auto;
+}
+#connexion-page .input_checkbox {
+  margin-bottom: 50px !important;
+  width: 80%;
+  margin: auto;
+}
+.input_checkbox input {
+  border-radius: 4px;
+  outline-color: #c7c8d2;
+  margin-right: 12px;
+}
+.input_checkbox a {
+  color: green;
+  text-decoration: none;
+}
+
+#inscription-page .btn-inscription,
+#connexion-page .btn-inscription {
+  width: 400px;
+  display: block;
+  margin: auto;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--primary-light);
+  color: var(--light);
+  padding: 18px 27px;
+  font-size: 18px;
+  margin-bottom: 17px;
+}
+.connect_link,
+.forget_link {
+  color: var(--primary);
+  text-decoration: none;
+}
+#inscription-page .content {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  overflow: hidden;
+  height: 90vh;
+  margin: 29px;
+  background-image: url("../images/inscription1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  background-position: right;
+}
+
+#connexion-page .content {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  overflow: hidden;
+  height: 90vh;
+  margin: 29px;
+  background-image: url("../images/connexion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  background-position: right;
+}
+.slide-row {
+  display: flex;
+  transition: 0.5s;
+  height: 232px;
+  position: absolute;
+  bottom: -30px;
+  left: -235px;
+  overflow: hidden;
+  z-index: -99;
+	z-index: 999
+}
+.slide-col {
+  position: relative;
+  min-width: 450px;
+  height: 100%;
+  margin: 0 15px;
+}
+.slide-section {
+  position: absolute;
+}
+.text-slide {
+  position: relative;
+  border-radius: 15.3279px;
+  color: white;
+}
+.text-slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: -webkit-fill-available;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15.3279px;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  border: 1px solid white;
+}
+.text-slide h2 {
+  position: inherit;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  margin-left: 20px;
+}
+.indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-50%);
+  bottom: 50px;
+  z-index: 999;
+}
+.btn-slide {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  border-radius: 15px;
+  background: var(--light);
+  cursor: pointer;
+  position: relative;
+  left: -195px;
+}
+.active {
+  width: 45px;
+}
+.slide-col1,
+.slide-col2,
+.slide-col3 {
+  visibility: hidden;
+}
+.active-col {
+  visibility: visible !important;
+}
+
+/*******Responsive Design**********/
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.99px) {
+  .inscription {
+    flex-direction: column-reverse;
+    margin: 0 15px;
+    min-height: initial;
+  }
+  #connexion-page {
+    min-height: initial;
+    margin-top: 30px;
+  }
+
+  #connexion-page .content {
+    margin-bottom: 80px;
+  }
+  .inscriptionform_header {
+    display: none;
+  }
+  .input_group_row {
+    width: initial;
+  }
+  #inscription-page .input_group {
+    width: 100%;
+    margin: initial;
+    margin-bottom: 15px !important;
+  }
+  #connexion-page .input_group {
+    width: 100%;
+    margin: initial;
+    margin-bottom: 35px !important;
+  }
+  .input_checkbox {
+    margin-bottom: 15px !important;
+    width: initial;
+    margin: initial;
+  }
+  #inscription-page .btn-inscription,
+  #connexion-page .btn-inscription {
+    width: 75% !important;
+  }
+  #inscription-page .content {
+    position: relative;
+    display: flex;
+    flex-basis: initial;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    overflow: hidden;
+    height: 293px;
+    margin: initial;
+    background-image: url("../images/inscription1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px;
+  }
+  #connexion-page .content {
+    position: relative;
+    display: flex;
+    flex-basis: initial;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    overflow: hidden;
+    height: 338px;
+    margin: initial;
+    background-image: url("../images/connexion.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px;
+  }
+  .slide-row {
+    bottom: -135px;
+    left: -188px;
+  }
+  .slide-col {
+    min-width: 350px;
+  }
+  .slide-col2 {
+    margin: 0 105px;
+  }
+  .slide-col3 {
+    margin: 0 25px;
+  }
+
+  .text-slide h2 {
+    font-size: 22.53px;
+  }
+  .btn-slide {
+    left: -160px;
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-row {
+    left: -150px;
+  }
+  .slide-col {
+    min-width: 270px;
+  }
+  .slide-col2 {
+    margin: 0 170px;
+  }
+  .slide-col3 {
+    margin: 0 50px;
+  }
+  .btn-slide {
+    left: -120px;
+    top: -50px;
+  }
+  .text-slide h2 {
+    font-size: 25px;
+  }
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+}
